@@ -48,3 +48,17 @@ npm install
 ```
 node server.js
 ```
+
+
+#### Docker Commands to push the Images to ECR
+1. docker compose 
+2. docker-compose up -d
+3. docker ps
+4. docker images
+5. View push commands in ECR (repo created through terraform infra code or if you created it manually)
+6. aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 249448484.dkr.ecr.us-east-1.amazonaws.com
+7. Tag the image you created it locally to the ecr repo name as below
+  509  docker tag dockercompose/vue-nodejs-express-mysql-compose:latest 249448484.dkr.ecr.us-east-1.amazonaws.com/dev_ecs_ecr:latest
+8. docker images
+9. push the tagged image using below command
+  docker push 249448484.dkr.ecr.us-east-1.amazonaws.com/dev_ecs_ecr:latest
