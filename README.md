@@ -62,3 +62,4 @@ node server.js
 8. docker images
 9. push the tagged image using below command
    docker push 249448484.dkr.ecr.us-east-1.amazonaws.com/dev_ecs_ecr:latest
+10. Use the buildspec for CICD pipeline   
