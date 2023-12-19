@@ -25,4 +25,4 @@ phases:
      - printf '[{"name":"<name of container>","imageUri":"<path of your image"}]'   > imagedefinitions.json
      - cat imagedefinitions.json
   artifacts:
-    files: imagedefinitions.json
+     files: imagedefinitions.json
