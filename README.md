@@ -72,3 +72,5 @@ secrets manager
       #IMAGE_REPO_NAME: ""
       #IMAGE_TAG: ""
       #AWS_ACCOUNT_ID: ""
+
+Also add permissions related to ECR to the role created for AWSCodeBuild- ECRfullaccess
