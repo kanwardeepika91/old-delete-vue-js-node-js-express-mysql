@@ -62,4 +62,13 @@ node server.js
 8. docker images
 9. push the tagged image using below command
    docker push 249448484.dkr.ecr.us-east-1.amazonaws.com/dev_ecs_ecr:latest
-10. Use the buildspec for CICD pipeline   
+10. Use the buildspec for CICD pipeline  
+
+These are related to buildspec.yml 
+#env: mentioned as plain text in Environment variables or you can also use parameter store/
+secrets manager
+   #variables:
+      # AWS_DEFAULT_REGION: ""
+      #IMAGE_REPO_NAME: ""
+      #IMAGE_TAG: ""
+      #AWS_ACCOUNT_ID: ""
