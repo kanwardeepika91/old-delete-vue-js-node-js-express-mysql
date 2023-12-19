@@ -1,11 +1,10 @@
 version: 0.2
-#env: mentioned as plain text in Environment variables or you can also use parameter store/secrets manager
 
+#env: mentioned as plain text in Environment variables or you can also use parameter store/secrets manager
 # AWS_DEFAULT_REGION: ""
 #IMAGE_REPO_NAME: ""
 #IMAGE_TAG: ""
 #AWS_ACCOUNT_ID: ""
-
 phases:
   install:
     runtime-versions:
