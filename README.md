@@ -50,7 +50,7 @@ node server.js
 ```
 
 
-#### Docker Commands to push the Images to ECR
+#### Docker Commands to push the Images to ECR [manual method]
 1. compose(write the dockercompose file) the docker-compose.yml
 2. docker-compose up -d
 3. docker ps
@@ -62,7 +62,7 @@ node server.js
 8. docker images
 9. push the tagged image using below command
    docker push 249448484.dkr.ecr.us-east-1.amazonaws.com/dev_ecs_ecr:latest
-10. Use the buildspec for CICD pipeline  
+10. Use the buildspec for AWS Codebuild/pipeline  
 
 These are related to buildspec.yml 
 #env: mentioned as plain text in Environment variables or you can also use parameter store/
@@ -73,4 +73,4 @@ secrets manager
       #IMAGE_TAG: ""
       #AWS_ACCOUNT_ID: ""
 
-Also add permissions related to ECR to the role created for AWSCodeBuild- ECRfullaccess
+NOTE: while creating codebuild , Create a role and add permissions related to ECR to the role created for AWSCodeBuild- EC2InstanceProfileForImageBuilderECRContainerBuilds
