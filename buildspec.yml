@@ -1,10 +1,10 @@
 version: 0.2
 env:
   variables:
-    "image": "dockercompose/vue-nodejs-express-mysql-compose"
-    "AWS_DEFAULT_REGION" : "us-east-1"
-    "AWS_ACCOUNT" : "272376774971"
-    "IMAGE_REPO_NAME": "dev-ecs"
+    image: "dockercompose/vue-nodejs-express-mysql-compose"
+    AWS_DEFAULT_REGION: "us-east-1"
+    AWS_ACCOUNT: "272376774971"
+    IMAGE_REPO_NAME: "dev-ecs"
 
 phases:
   pre_build:
