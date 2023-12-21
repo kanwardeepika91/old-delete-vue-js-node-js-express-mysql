@@ -74,3 +74,4 @@ secrets manager
       #AWS_ACCOUNT_ID: ""
 
 NOTE: while creating codebuild , Create a role and add permissions related to ECR to the role created for AWSCodeBuild- EC2InstanceProfileForImageBuilderECRContainerBuilds
+While creating codepipeline - create a role and then add this role to codebuild to give permissions for codebuild to codepipeline

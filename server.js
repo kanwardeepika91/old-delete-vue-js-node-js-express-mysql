@@ -9,7 +9,7 @@ const app = express();
 app.use(express.static(path));
 
 var corsOptions = {
-  origin: "http://localhost:8081"
+  origin: "http://localhost:6789"
 };
 
 app.use(cors(corsOptions));
@@ -37,7 +37,7 @@ require("./app/routes/turorial.routes")(app);
 require("dotenv").config();
 
 // set port, listen for requests
-const PORT = process.env.NODE_DOCKER_PORT || 1234;
+const PORT = process.env.NODE_DOCKER_PORT || 6789;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
