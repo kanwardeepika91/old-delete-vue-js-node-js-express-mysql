@@ -49,6 +49,13 @@ npm install
 node server.js
 ```
 
+### Below code details and dockerize App using Docker compose:
+Fullstack with Node.js Express:
+> [Vue.js + Node.js Express + MySQL](https://bezkoder.com/vue-js-node-js-express-mysql-crud-example/)
+
+https://www.bezkoder.com/node-js-express-sequelize-mysql/
+
+> https://www.bezkoder.com/docker-compose-nodejs-mysql/
 
 #### Docker Commands to push the Images to ECR [manual method]
 1. compose(write the dockercompose file) the docker-compose.yml
@@ -75,3 +82,13 @@ secrets manager
 
 NOTE: while creating codebuild , Create a role and add permissions related to ECR to the role created for AWSCodeBuild- EC2InstanceProfileForImageBuilderECRContainerBuilds
 While creating codepipeline - create a role and then add this role to codebuild to give permissions for codebuild to codepipeline
+
+
+MYSQL commands :
+
+mysql -u root -p
+CREATE DATABASE deepika_db;
+show databases;
+use deepika_db;
+
+SHOW INDEX FROM `tutorials`;
